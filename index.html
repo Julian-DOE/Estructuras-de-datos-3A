@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Vector-JS Lab</title>
+  <style>
+    canvas { border: 1px solid black; }
+  </style>
+</head>
+<body>
+
+<h2>Vector-JS Lab</h2>
+
+<!-- Entrada -->
+<label>V_A (x,y):</label>
+<input id="ax" type="number">
+<input id="ay" type="number"><br>
+
+<label>V_B (x,y):</label>
+<input id="bx" type="number">
+<input id="by" type="number"><br>
+
+<!-- Botones -->
+<button onclick="dibujar()">Dibujar</button>
+<button onclick="sumar()">Sumar</button>
+
+<br><br>
+
+<label>Escalar:</label>
+<input type="range" min="-5" max="5" value="1" id="escala" oninput="escalar()">
+
+<!-- Canvas -->
+<canvas id="canvas" width="400" height="400"></canvas>
+
+<!-- Consola -->
+<div id="consola"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
