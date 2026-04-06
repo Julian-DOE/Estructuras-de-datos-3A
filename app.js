@@ -27,7 +27,6 @@ function dibujarVector(x, y, color) {
 }
 
 
-// 🧹 LIMPIAR EL CANVAS
 function limpiar() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
